@@ -1,0 +1,21 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.clr:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+/* =========header========= */
+
+/* =========/header========= */
