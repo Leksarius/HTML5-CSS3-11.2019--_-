@@ -683,16 +683,75 @@ body {
     color: #ffffff;
 }
 
+.projects-tabs-btn:active {
+    color: silver;
+}
+
 .projects-item {
-    margin: 0 15px 0 15px;
+    margin: 0 15px 30px 15px;
+    position: relative;
+}
+
+.projects-item:hover .projects-btn-link {
+    display: block;
+}
+
+.projects-item:hover .projects-btn-search {
+    display: block;
+}
+
+.projects-item:hover .projects-btn-link:hover .projects-btn-link-icon {
+    fill: forestgreen;
+}
+
+.projects-item:hover .projects-btn-search:hover .projects-btn-search-icon {
+    fill: forestgreen;
+}
+
+.projects-item:hover .projects-btn-link:active .projects-btn-link-icon {
+    fill: darkgoldenrod;
+}
+
+.projects-item:hover .projects-btn-search:active .projects-btn-search-icon {
+    fill: darkgoldenrod;
+}
+
+.projects-item:hover .projects-item-photo {
+    filter: brightness(30%);
+}
+
+.projects-item:hover .projects-item-wrp {
+    background-color: #362f2d;
+}
+
+.projects-item:hover .projects-item-wrp:before {
+    border-bottom: 10px solid #362f2d;
+}
+
+.projects-item:hover .projects-item-title {
+    color: #ffffff;
+}
+
+.projects-item:hover .projects-item-txt {
+    color: #c7b299;
 }
 
 .projects-item-photo {
-    margin-bottom: 30px;
+    margin-bottom: -4px;
 }
 
 .projects-item-wrp {
-    padding: 0 0 27px 29px;
+    background-color: #fbfaf8;
+    padding: 30px 0 27px 30px;
+}
+
+.projects-item-wrp:before {
+    content: "";
+    border: 20px solid transparent;
+    border-bottom: 10px solid #fbfaf8;
+    position: absolute;
+    top: 207px;
+    left: 19px;
 }
 
 .projects-item-title {
@@ -717,9 +776,36 @@ body {
     margin: 0;
 }
 
-.projects-btn-link {}
+.projects-btn-link,
+.projects-btn-search {
+    width: 26px;
+    height: 26px;
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 30%
+}
 
-.projects-btn-search {}
+.projects-btn-link {
+    left: 40%;
+}
+
+.projects-btn-link-icon {
+    fill: #ffffff;
+}
+
+.projects-btn-search {
+    right: 40%;
+}
+
+.projects-btn-search-icon {
+    fill: #ffffff;
+}
 
 .projects-btn {
     width: 170px;
